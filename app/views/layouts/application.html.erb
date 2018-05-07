@@ -12,8 +12,60 @@
 
   <body>
   <div class="container">
+<div class="row">
+
+<div class="col-md-2">
+    <img id="logo1" src="/Logo1.jpg" />
+    </div>
+
+    <div class="col-md-8">
+
+        <h1 id="naslov"> <b> visitSa </b> </h1>
+
+    </div>
+
+    <div class="col-md-2">
+    <img id="logo" src="/Logo1.jpg" />
+    </div>
+
+</div>
+</div>
+  <%= render 'layouts/navbar' %>
+  <br/>
+  <div class="container">
   <%= yield %>
  </div>
  
+ 
+<style>
+
+#naslov{
+    font-size: 250px;
+    font-family: Colonna MT;
+    text-align:center;
+}
+
+#logo{
+    width: 200px;
+    height: 250px;
+    
+}
+#logo1{
+    width: 200px;
+    height: 250px;
+}
+
+#velika-slika{
+    width: 1120px;
+    height: 500px;
+}
+
+
+body {
+    background-color: lightblue;  
+}
+
+
+</style>
   </body>
 </html>
