@@ -6,12 +6,33 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="<%= landing2_page_path %>"> Znamenitosti <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<%= landing3_page_path %>"> Raspored za posjećenost znamenitosti </a>
-      </li>
+      <div class="dropdown">
+  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Znamenitosti 
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   
+    <a class="dropdown-item" href="<%= muzeji_path %>">Muzeji</a>
+    <a class="dropdown-item" href="<%= tabije_path %>">Tabije</a>
+    <a class="dropdown-item" href="<%= planine_path %>">Planine</a>
+    <a class="dropdown-item" href="<%= vjerski_objekti_path %>">Vjerski objekti</a>
+    <a class="dropdown-item" href="<%= zooloski_vrt_path %>">Zoološki vrt</a>
+  </div>
+</div>
       
+
+  <div class="dropdown">
+  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Raspored za posjećenost znamenitosti 
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="<%= dani_path %>">1 dan</a>
+    <a class="dropdown-item" href="<%= dani_path %>">2 dana</a>
+    <a class="dropdown-item" href="<%= dani_path %>">3 dana</a>
+     <a class="dropdown-item" href="<%= dani_path %>">4 dana</a>
+    <a class="dropdown-item" href="<%= dani_path %>">5 dana</a>
+  </div>
+</div>
     </ul>
   </div>
 </nav>
